@@ -1,0 +1,58 @@
+/* */
+@media screen and (max-width: 600px) {	
+    #vidwall {
+        position: fixed;  
+        transform: scale(2) rotate(90deg);
+        width: 100%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        z-index: -10;
+    }
+    
+    .hero img {
+        width: 90vw;
+        padding-bottom: 20vh;
+    }
+    
+    .main-content {
+        background-color: rgba(10,10,10,.6);
+    }
+    
+    #logo {
+        max-width: 30vw;
+        padding-top: 3vh;
+    }
+    
+    header h1 {
+        font-size: 3vh;
+    }
+    
+    .topics {
+        width: 100%;
+        font-size: 5vh;
+    }
+    
+    .topics > img {
+        max-width: 10vh;
+        padding-top: 7vh;
+        padding-bottom: 5vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        float: left;
+    }
+    
+    #webApp {
+        float: right;
+    }
+    
+    .topics > p {
+        font-size: 0.35;
+        padding: 2vw;
+    }
+}
+
+/* */
+@media screen and (min-device-width: 601px) and (max-width: 900px) {	
+
+}
