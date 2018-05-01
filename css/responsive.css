@@ -50,6 +50,41 @@
         font-size: 0.35;
         padding: 2vw;
     }
+    
+    .desc h1 {
+        margin: 0;
+        padding-top: 1vh;
+        font-size: 5vh;
+    }
+    
+    .unit {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+    .unit p {
+        font-size: .8em;
+    }
+    
+    .people {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    
+    .person {
+        padding-left: 6%;
+        padding-right: 6%;
+        width: 35%;
+        margin-bottom: 20px;
+    }
+
+    .person img {
+        max-width: 30vw;
+    }
+    
+    footer h1 {
+        font-size: 3vw;
+    }
 }
 
 /* */
