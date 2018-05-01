@@ -3,8 +3,8 @@ html, body {
 	padding: 0;
 }
 
-html {	
-	background-color: black;	
+html {
+	background-color: black;
 }
 
 @font-face {
@@ -85,18 +85,44 @@ header h1 {
 	width: 33.33%;
 	float: left;
 	text-align: center;
-	background-color: rgba(0,0,0,0.75);
-	
+	background-color: rgba(15,15,15,0.75);
+	height: 50vh;
 }
 
 .topics > img {
 	max-width: 7vw;
 }
 
-.topics > h1 {
-	color: rgb(255,225,0);
+.topics> h1 {
 	font-size: 0.5em;
 	font-family: light;
+}
+
+.topics:nth-of-type(1) > h1 {
+	color: rgb(88,116,226);
+}
+
+.topics:nth-of-type(1):hover > h1 {
+	color: rgb(246,250,243);	
+	text-shadow: 1px 1px 2px rgb(88,116,226), 0 0 12.5px rgb(88,116,226), 0 0 5px white;
+}
+
+.topics:nth-of-type(2) > h1 {
+	color: rgb(222,93,226);
+}
+
+.topics:nth-of-type(2):hover > h1 {
+	color: rgb(247,251,248);	
+	text-shadow: 1px 1px 2px rgb(222,93,226), 0 0 12.5px rgb(222,93,226), 0 0 5px white;
+}
+
+.topics:nth-of-type(3) > h1 {
+	color: rgb(179,74,80);
+}
+
+.topics:nth-of-type(3):hover > h1 {
+	color: rgb(264,251,252);	
+	text-shadow: 1px 1px 2px rgb(179,74,80), 0 0 12.5px rgb(179,74,80), 0 0 5px white;
 }
 
 .topics > p {
