@@ -85,6 +85,10 @@
     footer h1 {
         font-size: 3vw;
     }
+    
+    footer {
+        margin-top: 5vh;
+    }
 }
 
 /* */

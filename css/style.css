@@ -157,16 +157,19 @@ header h1 {
 	padding-right: 15%;
 }
 
-.desc h1 {
-	margin: 0;
-	padding: 0;
+.desc img {
+    width: 50vw;
+    padding-left: 0;
+}
+
+.people {
+    padding-bottom: 5vh;
+    padding-top: 5vh;
 }
 
 .person {	
 	float: left;
 	width: 16.66%;
-    padding-bottom: 10vh;
-    padding-top: 10vh;
 }
 
 .person img {
