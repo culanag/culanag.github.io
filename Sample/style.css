@@ -1,0 +1,127 @@
+body{
+    background-image: url("background.jpg");
+    height: 100%; 
+    background-position: center;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: montserrat;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url("Montserrat-Regular.otf");
+}
+
+
+@font-face {
+    font-family: starjedi;
+    src: url("Starjedi.ttf");
+}
+
+@font-face {
+    font-family: starjhol;
+    src: url("Starjhol.ttf");
+}
+
+#content{
+	height: 100%;
+}
+
+#page-header{
+	text-align: center;
+	color: #ffbf00;
+	font-family: starjhol;
+	font-size: 2.5vw;
+}
+
+#topics-list{
+	width: 25%; 
+	color: #cc9900;
+	font-family: starjedi;
+	font-style: bolder;
+	font-size: 1.3vw;
+	background-color: rgba(13, 13, 13, 0.75);
+	position: fixed;
+	text-align: center;
+}
+
+#topics-list ul{
+	list-style-type: none;
+}
+
+#topics-list a{
+	text-decoration: none;
+	color: #cc9900;
+}
+
+#topics-list a:hover{
+	color: #ffd24d;
+}
+
+#quizTag{
+	-webkit-animation:colorchange 1s infinite alternate;
+}
+
+ @-webkit-keyframes colorchange {
+      0% {       
+        color: red;
+      }
+		50% {       
+        color: #cc9900;
+      }	
+	  
+	  100% {       
+        color: red;
+      }	
+	
+ }
+.topics{
+	width: 74%;
+	float: right;
+	color: #cc9900;
+	font-family: montserrat;
+	font-size: 1vw;
+}
+
+.topics h2{
+	font-family: starjedi;
+	font-size: 2.5vw;
+	margin-left: 2%;
+}
+
+.topics .subtopic{
+	background-color: rgba(13, 13, 13, 0.75);
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-bottom: 1%;
+}
+
+.topics .subtopic h3{
+	font-family: starjedi;
+	font-size: 1.8vw;
+	text-align: center;
+}
+
+#quote{
+    display: none;
+    position: fixed;
+	margin-top: 5%;
+    width: 25%;
+	color: #cc9900;
+    z-index: 1;
+	font-family: montserrat;
+	font-size: 1vw;
+	text-align:center;
+	-webkit-animation: fadein 3s;
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#quote img{
+	width: 50%;
+	height: 50%;
+}
