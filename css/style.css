@@ -8,6 +8,22 @@ html {
 }
 
 @font-face {
+    font-family: montserrat;
+    src: url("../fonts/Montserrat-Regular.otf");
+}
+
+
+@font-face {
+    font-family: starjedi;
+    src: url("../fonts/Starjedi.ttf");
+}
+
+@font-face {
+    font-family: starjhol;
+    src: url("../fonts/Starjhol.ttf");
+}
+
+@font-face {
     font-family: force;
     src: url(../fonts/force.ttf);
 }
@@ -347,4 +363,136 @@ footer h1 {
   100% {
     opacity: 0;
   }
+}
+
+/*Sam CSS*/
+#content{
+	height: 100%;
+}
+
+#page-header{
+	text-align: center;
+	color: rgb(255,216,0);
+	font-family: starjhol;
+	font-size: 2.5vw;
+}
+
+#topics-list{
+	width: 25%; 
+	color: rgb(255,216,0);
+	font-family: starjedi;
+	font-style: bolder;
+	font-size: 1.3vw;
+	background-color: rgba(13, 13, 13, 0.75);
+	position: fixed;
+	text-align: center;
+}
+
+#topics-list ul{
+	list-style-type: none;
+}
+
+#topics-list a{
+	text-decoration: none;
+	color: rgb(255,216,0);
+}
+
+#topics-list a:hover{
+	color: #ffd24d;
+}
+
+#topics-list #aSSWSTech{
+	color: rgb(88,116,226);
+}
+
+#topics-list #aSSWSTech:hover{
+	color: rgb(246,250,243);	
+	text-shadow: 1px 1px 2px rgb(88,116,226), 0 0 12.5px rgb(88,116,226), 0 0 5px white;
+}
+
+#topics-list #aSSWSTopics{
+	color: rgb(222,93,226);
+}
+
+#topics-list #aSSWSTopics:hover{
+	color: rgb(247,251,248);	
+	text-shadow: 1px 1px 2px rgb(222,93,226), 0 0 12.5px rgb(222,93,226), 0 0 5px white;
+}
+
+#topics-list #aWAS {
+	color: rgb(179,74,80);
+}
+
+#topics-list #aWAS:hover{
+	color: rgb(264,251,252);	
+	text-shadow: 1px 1px 2px rgb(179,74,80), 0 0 12.5px rgb(179,74,80), 0 0 5px white;
+}
+
+#quizTag{
+	-webkit-animation:colorchange 1s infinite alternate;
+}
+
+ @-webkit-keyframes colorchange {
+      0% {       
+        color: red;
+      }
+		50% {       
+        color: #cc9900;
+      }	
+	  
+	  100% {       
+        color: red;
+      }	
+	
+ }
+.notetopics{
+	width: 74%;
+	float: right;
+	color: white;
+	font-family: montserrat;
+	font-size: 1vw;
+}
+
+.notetopics h2{
+	font-family: starjedi;
+	font-size: 2.5vw;
+	margin-left: 2%;
+	color: rgb(255,216,0);
+}
+
+.notetopics .subtopic{
+	background-color: rgba(13, 13, 13, 0.75);
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-bottom: 1%;
+}
+
+.notetopics .subtopic h3{
+	font-family: starjedi;
+	font-size: 1.8vw;
+	text-align: center;
+	color: rgb(255,216,0);
+}
+
+#quote{
+    display: none;
+    position: fixed;
+	margin-top: 5%;
+    width: 25%;
+	color: rgb(255,216,0);
+    z-index: 1;
+	font-family: montserrat;
+	font-size: 1vw;
+	text-align:center;
+	-webkit-animation: fadein 3s;
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#quote img{
+	width: 50%;
+	height: 50%;
 }
