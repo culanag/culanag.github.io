@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/responsive.css" type="text/css">
-	<script src="js/quote.js" type="text/javascript"></script> 
-	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script>		
 		var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
 			"mp3": "audio/mpeg",
@@ -74,10 +73,10 @@
 		<h2>Server-Side Web Scripting Technologies</h2>
     <div class="subtopic">
 		<h3 id="servletsNotes">Java Web Servlets</h3>	
-			<h4>What is a Java Servlet?</h4>
+			<h4>what is a java servlet?</h4>
 				<p>Java Servlet technology was created as a portable way to provide dynamic, user-oriented content. A servlet is a Java programming language class used to extend the capabilities of servers that host applications accessed by means of a request-response programming model. Although servlets can respond to any type of request, they are commonly used to extend the applications hosted by web servers. For such applications, Java Servlet technology defines HTTP-specific servlet classes.</p>
 				<p>The <i>javax.servlet</i> and <i>javax.servlet.http</i> packages provide interfaces and classes for writing servlets. All servlets must implement the <b>Servlet interface</b>, which defines lifecycle methods. When implementing a generic service, you can use or extend the <b>GenericServlet</b> class provided with the Java Servlet API. The <b>HttpServlet</b> class provides methods, such as <i>doGet</i> and <i>doPost</i>, for handling HTTP-specific services.</p>
-			<h4>Servlet Lifecycle</h4>
+			<h4>servlet lifecycle</h4>
 				<p>The lifecycle of a servlet is controlled by the container in which the servlet has been deployed. When a request is mapped to a servlet, the container performs the following steps.</p>
 				<ol>
 					<li>If an instance of the servlet does not exist, the web container:
@@ -89,7 +88,7 @@
 						</ul></li>
 					<li>If it needs to remove the servlet, the container finalizes the servlet by calling the servlet's destroy method.</li>
 				</ol>
-			<h4>Version Release</h4>
+			<h4>version release</h4>
 				<table class="version">
 					<tr>
 						<th>Servlet API Version</th>
@@ -151,7 +150,7 @@
 	
 	<div class="subtopic">
       <h3 id="JSPNotes">Java Server Pages(JSP)</h3>
-		<h4>What is JSP?</h4>
+		<h4>what is jsp?</h4>
 			<p>Java Server Pages (JSP) is a server-side programming technology that enables the creation of dynamic, platform-independent method for building Web-based applications based on HTML, XML, or other document types. Released in 1999 by Sun Microsystems, JSP is similar to PHP and ASP, but it uses the Java programming language.</p>
 			<p>To deploy and run JavaServer Pages, a compatible web server with a servlet container, such as Apache Tomcat or Jetty, is required. JSP has access to the entire family of Java APIs, including the JDBC API to access enterprise databases.</p>
 			<p>Architecturally, JSP may be viewed as a high-level abstraction of Java servlets. JSPs are translated into servlets at runtime, therefore JSP is a Servlet; each JSP servlet is cached and re-used until the original JSP is modified. The difference of JSP with Java servlets is that, servlets are HTML in Java, while JSP is Java in HTML.</p>
@@ -159,11 +158,11 @@
 	
 	<div class="subtopic">
       <h3 id="PHPNotes">PHP</h3>
-		<h4>What is PHP?</h4>
+		<h4>What is php?</h4>
 			<p>PHP stands for PHP: Hypertext Preprocessor. This confuses many people because the first word of the acronym is the acronym. This type of acronym is called a recursive acronym. PHP is an HTML-embedded scripting language. Much of its syntax is borrowed from C, Java and Perl with a couple of unique PHP-specific features thrown in. The goal of the language is to allow web developers to write dynamically generated pages quickly.</p>
 			<p>PHP development began in 1994 when Rasmus Lerdorf wrote several Common Gateway Interface (CGI) programs in C, which he used to maintain his personal homepage. He extended them to work with web forms and to communicate with databases, and called this implementation "Personal Home Page/Forms Interpreter" or PHP/FI.</p>
 			<p>What distinguishes PHP from something like client-side JavaScript is that the code is executed on the server, generating HTML which is then sent to the client. The client would receive the results of running that script, but would not know what the underlying code was. You can even configure your web server to process all your HTML files with PHP, and then there's really no way that users can tell what you have up your sleeve.</p>
-		<h4>PHP Version Release</h4>
+		<h4>php version release</h4>
 			<p>The PHP language evolved without a written formal specification or standard until 2014, leaving the canonical PHP interpreter as a de facto standard.</p>
 			<table class="version">
 				<tr>
@@ -234,7 +233,7 @@
 				<tr>
 					<td>5.4</td>
 					<td>1 March 2012</td>
-					<td>Trait support, short array syntax support. Removed items: <b>register_globals</b>, <b>safe_mode</b>, <b>allow_call_time_pass_reference</b>, <b>session_register()</b>, <b>session_unregister()</b> and <b>session_is_registered()</b>.</td>
+					<td>Trait support, short array syntax support. Removed items: <b>register_globals</b>, <b>safe_mode</b>, <b>session_register()</b>, <b>session_unregister()</b> and <b>session_is_registered()</b>.</td>
 				</tr>
 				<tr>
 					<td>5.5</td>
@@ -271,11 +270,11 @@
 	
 	<div class="subtopic">
       <h3 id="NodeJSNotes">Node.JS</h3>
-		<h4>What is Node.JS?</h4>
+		<h4>what is Node.js?</h4>
 			<p>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem,<b>npm</b>, is the largest ecosystem of open source libraries in the world.</p>
 			<p>Node.js is an open source, cross-platform runtime environment for developing server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux.</p>
 			<p>Node.js uses a single threaded model with event looping. Event mechanism helps the server to respond in a non-blocking way and makes the server highly scalable as opposed to traditional servers which create limited threads to handle requests. Node.js uses a single threaded program and the same program can provide service to a much larger number of requests than traditional servers like Apache HTTP Server.</p>
-		<h4>Brief History</h4>
+		<h4>brief history</h4>
 			<p>Node.js was originally written by Ryan Dahl in 2009,about thirteen years after the introduction of the first server-side JavaScript environment, Netscape's LiveWire Pro WebThe initial release supported only Linux and Mac OS X. Its development and maintenance was led by Dahl and later sponsored by Joyent.</p>
 			<dl>
 				<dt>June 2011</dt>
@@ -291,7 +290,7 @@
 				<dt>September 2015</dt>
 					<dd>Node.js v0.12 and io.js v3.3 were merged back together into Node v4.0. </dd>
 			</dl>
-		<h4>Node.JS Version Release</h4>
+		<h4>node.js version release</h4>
 			<table class="version">
 				<tr>
 					<th>Version</th>
@@ -375,8 +374,8 @@
 				<p>The Open Web Application Security Project (OWASP) is an open community dedicated to enabling organizations to develop, purchase, and maintain applications and APIs that can be trusted.</p>
 			<h3>What Are Application Risks</h3>
 				<p>Attackers can potentially use many different paths through your application to do harm to your business or organization. Each of these paths represents a risk that may, or may not, be serious enough to warrant attention. Sometimes these paths are trivial to find and exploit, and sometimes they are extremely difficult. Similarly, the harm that is caused may be of no consequence, or it may put you out of business. To determine the risk to your organization, you can evaluate the likelihood associated with each threat agent, attack vector, and security weakness and combine it with an estimate of the technical and business impact to your organization. Together, these factors determine your overall risk.</p>
-			<h3>What Changed from 2013 Top 10 Web App Security Risks</h3>
-				<img src="media/WASComparison.png">
+			<h3>What Changed from 2013 Top 10 Web App Security Risks
+				<br><img src="media/WASComparison.png" alt="OWASP 2013to2017 comparison"></h3>
 			<h3>Top 10 Application Security Risks of 2017</h3>
 				<ol id="top10">
 					<li>Injection</li>
@@ -405,5 +404,9 @@
 	</div>
 	</div>
   </div>
+  
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="js/quote.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
