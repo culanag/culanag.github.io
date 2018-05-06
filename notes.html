@@ -89,7 +89,7 @@
 					<li>If it needs to remove the servlet, the container finalizes the servlet by calling the servlet's destroy method.</li>
 				</ol>
 			<h4>Version Release</h4>
-				<table>
+				<table class="version">
 					<tr>
 						<th>Servlet API Version</th>
 						<th>Release Date</th>
@@ -164,7 +164,7 @@
 			<p>What distinguishes PHP from something like client-side JavaScript is that the code is executed on the server, generating HTML which is then sent to the client. The client would receive the results of running that script, but would not know what the underlying code was. You can even configure your web server to process all your HTML files with PHP, and then there's really no way that users can tell what you have up your sleeve.</p>
 		<h4>PHP Version Release</h4>
 			<p>The PHP language evolved without a written formal specification or standard until 2014, leaving the canonical PHP interpreter as a de facto standard.</p>
-			<table>
+			<table class="version">
 				<tr>
 					<th>Version</th>
 					<th>Release Date</th>
@@ -291,7 +291,7 @@
 					<dd>Node.js v0.12 and io.js v3.3 were merged back together into Node v4.0. </dd>
 			</dl>
 		<h4>Node.JS Version Release</h4>
-			<table>
+			<table class="version">
 				<tr>
 					<th>Version</th>
 					<th>Code Name</th>
@@ -367,37 +367,37 @@
 	</div>
 	
 	<div class = "notetopics" id="WAS">
-		<h2>Web Application Security<small>(based on 2017 OWASP Top 10)</small></h2>
+		<h2>Web Application Security<br><small>(based on 2017 owasp Top 10)</small></h2>
 		
 		<div class="subtopic">
-			<h3>About OWASP</h3>
+			<h3>About owasp</h3>
 				<p>The Open Web Application Security Project (OWASP) is an open community dedicated to enabling organizations to develop, purchase, and maintain applications and APIs that can be trusted.</p>
 			<h3>What Are Application Risks</h3>
 				<p>Attackers can potentially use many different paths through your application to do harm to your business or organization. Each of these paths represents a risk that may, or may not, be serious enough to warrant attention. Sometimes these paths are trivial to find and exploit, and sometimes they are extremely difficult. Similarly, the harm that is caused may be of no consequence, or it may put you out of business. To determine the risk to your organization, you can evaluate the likelihood associated with each threat agent, attack vector, and security weakness and combine it with an estimate of the technical and business impact to your organization. Together, these factors determine your overall risk.</p>
 			<h3>What Changed from 2013 Top 10 Web App Security Risks</h3>
 				<img src="media/WASComparison.png">
 			<h3>Top 10 Application Security Risks of 2017</h3>
-				<ol>
-					<li>Injection
-						<br>- Injection flaws, such as SQL, NoSQL, OS, and LDAP injection, occur when untrusted data is sent to an interpreter as part of a command or query. The attacker’s hostile data can trick the interpreter into executing unintended commands or accessing data without proper authorization.</li>
-					<li>Broken Authentication
-						<br>- Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users’ identities temporarily or permanently.</li>
-					<li>Sensitive Data Exposure
-						<br>- Many web applications and APIs do not properly protect sensitive data, such as financial, healthcare, and PII. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data may be compromised without extra protection, such as encryption at rest or in transit, and requires special precautions when exchanged with the browser.</li>
-					<li>XML External Entities (XXE)
-						<br>- Many older or poorly configured XML processors evaluate external entity references within XML documents. External entities can be used to disclose internal files using the file URI handler, internal file shares, internal port scanning, remote code execution, and denial of service attacks.</li>
-					<li>Broken Access Control
-						<br>- Restrictions on what authenticated users are allowed to do are often not properly enforced. Attackers can exploit these flaws to access unauthorized functionality and/or data, such as access other users' accounts, view sensitive files, modify other users’ data, change access rights, etc.</li>
-					<li>Security Misconfiguration
-						<br>- Security misconfiguration is the most commonly seen issue. This is commonly a result of insecure default configurations, incomplete or ad hoc configurations, open cloud storage, misconfigured HTTP headers, and verbose error messages containing sensitive information. Not only must all operating systems, frameworks, libraries, and applications be securely configured, but they must be patched and upgraded in a timely fashion.</li>
+				<ol id="top10">
+					<li>Injection</li>
+						<p>- Injection flaws, such as SQL, NoSQL, OS, and LDAP injection, occur when untrusted data is sent to an interpreter as part of a command or query. The attacker’s hostile data can trick the interpreter into executing unintended commands or accessing data without proper authorization.</p>
+					<li>Broken Authentication</li>
+						<p>- Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users’ identities temporarily or permanently.</p>
+					<li>Sensitive Data Exposure</li>
+						<p>- Many web applications and APIs do not properly protect sensitive data, such as financial, healthcare, and PII. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data may be compromised without extra protection, such as encryption at rest or in transit, and requires special precautions when exchanged with the browser.</p>
+					<li>XML External Entities (XXE)</li>
+						<p>- Many older or poorly configured XML processors evaluate external entity references within XML documents. External entities can be used to disclose internal files using the file URI handler, internal file shares, internal port scanning, remote code execution, and denial of service attacks.</p>
+					<li>Broken Access Control</li>
+						<p>- Restrictions on what authenticated users are allowed to do are often not properly enforced. Attackers can exploit these flaws to access unauthorized functionality and/or data, such as access other users' accounts, view sensitive files, modify other users’ data, change access rights, etc.</p>
+					<li>Security Misconfiguration</li>
+						<p>- Security misconfiguration is the most commonly seen issue. This is commonly a result of insecure default configurations, incomplete or ad hoc configurations, open cloud storage, misconfigured HTTP headers, and verbose error messages containing sensitive information. Not only must all operating systems, frameworks, libraries, and applications be securely configured, but they must be patched and upgraded in a timely fashion.</p>
 					<li>Cross-Site Scripting (XSS)
-						<br>- XSS flaws occur whenever an application includes untrusted data in a new web page without proper validation or escaping, or updates an existing web page with user-supplied data using a browser API that can create HTML or JavaScript. XSS allows attackers to execute scripts in the victim’s browser which can hijack user sessions, deface web sites, or redirect the user to malicious sites.</li>
-					<li>Insecure Deserialization
-						<br>- Insecure deserialization often leads to remote code execution. Even if deserialization flaws do not result in remote code execution, they can be used to perform attacks, including replay attacks, injection attacks, and privilege escalation attacks. </li>
-					<li>Using Components with Known Vulnerabilities
-						<br>- Components, such as libraries, frameworks, and other software modules, run with the same privileges as the application. If a vulnerable component is exploited, such an attack can facilitate serious data loss or server takeover. Applications and APIs using components with known vulnerabilities may undermine application defenses and enable various attacks and impacts. </li>
-					<li>Insufficient Logging & Monitoring
-						<br>- Insufficient logging and monitoring, coupled with missing or ineffective integration with incident response, allows attackers to further attack systems, maintain persistence, pivot to more systems, and tamper, extract, or destroy data. Most breach studies show time to detect a breach is over 200 days, typically detected by external parties rather than internal processes or monitoring. </li>
+						<p>- XSS flaws occur whenever an application includes untrusted data in a new web page without proper validation or escaping, or updates an existing web page with user-supplied data using a browser API that can create HTML or JavaScript. XSS allows attackers to execute scripts in the victim’s browser which can hijack user sessions, deface web sites, or redirect the user to malicious sites.</p>
+					<li>Insecure Deserialization</li>
+						<p>- Insecure deserialization often leads to remote code execution. Even if deserialization flaws do not result in remote code execution, they can be used to perform attacks, including replay attacks, injection attacks, and privilege escalation attacks. </p>
+					<li>Using Components with Known Vulnerabilities</li>
+						<p>- Components, such as libraries, frameworks, and other software modules, run with the same privileges as the application. If a vulnerable component is exploited, such an attack can facilitate serious data loss or server takeover. Applications and APIs using components with known vulnerabilities may undermine application defenses and enable various attacks and impacts. </p>
+					<li>Insufficient Logging & Monitoring</li>
+						<p>- Insufficient logging and monitoring, coupled with missing or ineffective integration with incident response, allows attackers to further attack systems, maintain persistence, pivot to more systems, and tamper, extract, or destroy data. Most breach studies show time to detect a breach is over 200 days, typically detected by external parties rather than internal processes or monitoring. </p>
 				</ol>
 				<p>For more information, download the full <a href='files/OWASP_Top_10-2017.pdf' download>pdf</a>.</p>
 		</div>
