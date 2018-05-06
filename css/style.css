@@ -374,7 +374,7 @@ footer h1 {
 	text-align: center;
 	color: rgb(255,216,0);
 	font-family: starjhol;
-	font-size: 2.5vw;
+	font-size: 2.8vw;
 }
 
 #topics-list{
@@ -382,14 +382,10 @@ footer h1 {
 	color: rgb(255,216,0);
 	font-family: starjedi;
 	font-style: bolder;
-	font-size: 1.3vw;
+	font-size: 1.6vw;
 	background-color: rgba(13, 13, 13, 0.75);
 	position: fixed;
-	text-align: center;
-}
-
-#topics-list ul{
-	list-style-type: none;
+	top: 45%;
 }
 
 #topics-list a{
@@ -445,14 +441,19 @@ footer h1 {
       }	
 	
  }
+ 
 .notetopics{
 	width: 74%;
 	float: right;
 	color: white;
 	font-family: montserrat;
-	font-size: 1vw;
+	font-size: 1.2vw;
 }
 
+.notetopics img{
+	margin-left: 10%;
+	margin-right: 10%;
+}
 .notetopics h2{
 	font-family: starjedi;
 	font-size: 2.5vw;
@@ -462,27 +463,54 @@ footer h1 {
 
 .notetopics .subtopic{
 	background-color: rgba(13, 13, 13, 0.75);
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-bottom: 1%;
+	padding-left: 2%;
 	margin-bottom: 1%;
 }
 
-.notetopics .subtopic h3{
+.subtopic h3{
 	font-family: starjedi;
-	font-size: 1.8vw;
+	font-size: 2.2vw;
 	text-align: center;
 	color: rgb(255,216,0);
 }
 
+.subtopic h4{
+	font-family: starjedi;
+	font-size: 1.8vw;
+	color: rgb(255,216,0);
+}
+
+.version{
+	margin-left: 4.5%;
+	margin-right: 4.5%;
+	width: 90%;
+	border-collapse: collapse;
+}
+
+.version td, th {
+    border: 1px solid rgba(77, 77, 77, 0.50);
+    text-align: left;
+    padding: 1%;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(77, 77, 77, 0.50);
+	color: rgb(230, 230, 230);
+}
+
+#top10 li{
+	color: rgb(255,216,0);
+}
 #quote{
     display: none;
     position: fixed;
-	margin-top: 5%;
+	margin-top: 1%;
     width: 25%;
 	color: rgb(255,216,0);
     z-index: 1;
-	font-family: montserrat;
-	font-size: 1vw;
+	font-family: light;
+	font-size: 1.2vw;
 	text-align:center;
 	-webkit-animation: fadein 3s;
 }
