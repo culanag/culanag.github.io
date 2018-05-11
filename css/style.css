@@ -368,6 +368,7 @@ footer h1 {
 /*Sam CSS*/
 #content{
 	height: 100%;
+	display: inline-block;
 }
 
 #page-header{
@@ -451,8 +452,8 @@ footer h1 {
 }
 
 .notetopics img{
-	margin-left: 10%;
-	margin-right: 10%;
+	padding-top: 2%;
+	width: 90%;
 }
 .notetopics h2{
 	font-family: starjedi;
@@ -461,7 +462,7 @@ footer h1 {
 	color: rgb(255,216,0);
 }
 
-.notetopics .subtopic{
+.subtopic{
 	background-color: rgba(13, 13, 13, 0.75);
 	padding-bottom: 1%;
 	padding-left: 2%;
@@ -490,6 +491,7 @@ footer h1 {
 	margin-right: 4.5%;
 	width: 90%;
 	border-collapse: collapse;
+	margin-bottom: 3%;
 }
 
 .version td, th {
