@@ -481,6 +481,10 @@ footer h1 {
 	color: rgb(255,216,0);
 }
 
+.subtopic dl > dt{
+	color: rgb(255,216,0)
+}
+
 .version{
 	margin-left: 4.5%;
 	margin-right: 4.5%;

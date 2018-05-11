@@ -1,6 +1,7 @@
 document.addEventListener("scroll", function() { 
 	if(window.scrollY > 400){
-	document.getElementById("quote").style.display = "block";} 
+	document.getElementById("quote").style.display = "block";}
+	
 	else{	
 	document.getElementById("quote").style.display = "none";
 	init = getQuote();}
@@ -16,4 +17,16 @@ function getQuote(){
 	];
 			var randomNumber= Math.floor(Math.random()* (quoteSource.length));
 			document.getElementById("quoteText").innerHTML = quoteSource[randomNumber];
+};
+
+function countdown(elementID, time){
+	var timer = setInterval(function(){
+		time = 300;
+		time = time - 1;
+		
+		if (time < 1) {
+			clearInterval(timer);
+			init = getQuote();
+		}
+	}, 1000);
 };
