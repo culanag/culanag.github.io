@@ -694,7 +694,7 @@ tr:nth-child(even) {
 }
 
 #fourth-choice {
-    padding-top: 10vh;
+    margin-top: 10vh;
     -webkit-animation:colorchange 1s infinite alternate;
 }
 
