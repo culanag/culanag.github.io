@@ -661,8 +661,8 @@ tr:nth-child(even) {
     position: fixed;
     z-index: 10;
     width: 12vw;
-    padding-top: 90vh;
-    padding-left: 83vw;
+    margin-top: 90vh;
+    margin-left: 83vw;
 }
 
 #first-choice {
@@ -696,9 +696,4 @@ tr:nth-child(even) {
 #fourth-choice {
     margin-top: 10vh;
     -webkit-animation:colorchange 1s infinite alternate;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
 }
