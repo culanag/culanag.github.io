@@ -447,10 +447,10 @@ footer h1 {
     width: 66vw;
     padding-left: 17vw;
     padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-bottom: 1.5vh;
 }
 
-#topics-list{
+#topics-list {
 	width: 25%; 
 	color: rgb(255,216,0);
 	font-family: starjedi;
@@ -459,6 +459,16 @@ footer h1 {
 	background-color: rgba(13, 13, 13, 0.75);
 	position: fixed;
 	top: 45%;
+}
+
+#topics-list ul {
+    text-align: center;
+    list-style-type: none;
+    -webkit-padding-start: 1vw;
+}
+
+#topics-list li {
+    margin-top: 1vh;
 }
 
 #topics-list a{
@@ -530,8 +540,9 @@ footer h1 {
 }
  
 .notetopics{
-	width: 74%;
+	width: 73%;
 	float: right;
+    padding-right: 2vh;
 	color: white;
 	font-family: montserrat;
 	font-size: 1.5vw;
@@ -540,6 +551,7 @@ footer h1 {
 
 .notetopics img{
 	padding-top: 2%;
+    padding-left: 5%;
 	width: 90%;
 }
 
@@ -616,7 +628,7 @@ tr:nth-child(even) {
 #quote{
     display: none;
     position: fixed;
-	margin-top: 1%;
+	margin-top: 10vh;
     width: 25%;
 	color: rgb(255,216,0);
     z-index: 1;
@@ -632,6 +644,7 @@ tr:nth-child(even) {
 }
 
 #quote img{
+    margin-top: 2vh;
 	width: 50%;
 	height: 50%;
 }
