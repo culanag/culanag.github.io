@@ -666,7 +666,7 @@ tr:nth-child(even) {
 }
 
 #first-choice {
-    padding-top: 10vh;
+    margin-top: 10vh;
     color: rgb(88,116,226);
 }
 
