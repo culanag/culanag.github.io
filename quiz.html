@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebTech Finals</title>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/responsive.css"/>
+    <!--link rel="manifest" href="manifest.json"-->
+	<script>		
+		var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+			"mp3": "audio/mpeg",
+			"mp4": "audio/mp4",
+			"ogg": "audio/ogg",
+			"wav": "audio/wav"
+		}
+
+		function createsoundbite(sound){
+			var html5audio=document.createElement('audio')
+			if (html5audio.canPlayType){ //check support for HTML5 audio
+				for (var i=0; i<arguments.length; i++){
+					var sourceel=document.createElement('source')
+					sourceel.setAttribute('src', arguments[i])
+					if (arguments[i].match(/\.(\w+)$/i))
+						sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+					html5audio.appendChild(sourceel)
+				}
+				html5audio.load()
+				html5audio.playclip=function(){
+					html5audio.pause()
+					html5audio.currentTime=0
+					html5audio.play()
+				}
+				return html5audio
+			}
+			else{
+				return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+			}
+		}
+
+		//Initialize two sound clips with 1 fallback file each:
+		var mouseoversound=createsoundbite("media/spin.mp4")
+		var clicksound=createsoundbite("media/click.mp4")
+	</script>
+</head>
+<body>
+	<div class="video-container">
+		<video autoplay muted loop id="vidwall">
+			<source src="media/bg.mp4" type="video/mp4">
+		</video>
+		
+		 <audio autoplay loop muted>
+			 <source src="media/imperial.mp3" type="audio/mpeg">
+		</audio> 
+	</div>
+	
+	<div class="hero-2">
+		<h1><a href="index.html"><img src="media/quizTime.png"></a></h1>
+		
+	</div>
+	
+	<div class="quiz-content" id="quiz-content">
+		
+		<div class="quiz" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip();window.location.href='server-side-quiz.jsp'">
+			<img src="media/script.png" id="serverSide">
+			<h1>Server-side Web Scripting</h1>
+			<p>Take the quiz in Server Side Web Scripting Technologies: Java Servlets, Java Server Pages (JSP), PHP, and Node.js. </p>
+		</div>
+		
+		<div class="quiz" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip();window.location.href='web-security-quiz.jsp'">
+			<img src="media/security.png" id="webApp">
+			<h1>Web Application Security</h1>
+			<p>Take the quiz about Open Web Application Security Project a.k.a. (OWASP) Top 10 Application Security Risks. </p>
+		</div>
+	</div>
