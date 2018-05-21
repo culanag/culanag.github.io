@@ -534,7 +534,7 @@ footer h1 {
 	float: right;
 	color: white;
 	font-family: montserrat;
-	font-size: 1.2vw;
+	font-size: 1.5vw;
 }
 
 .notetopics img{
@@ -578,9 +578,12 @@ footer h1 {
 	width: 90%;
 	border-collapse: collapse;
 	margin-bottom: 3%;
+    display: none;
+    overflow: hidden;
+    vertical-align: middle;
 }
 
-.version td, th {
+.version-table td, th {
     border: 1px solid rgba(77, 77, 77, 0.50);
     text-align: left;
     padding: 1%;
@@ -696,4 +699,18 @@ tr:nth-child(even) {
 #fourth-choice {
     margin-top: 10vh;
     -webkit-animation:colorchange 1s infinite alternate;
+}
+
+.show-table {
+    background-color: #e50000;
+    color: white;
+    cursor: pointer;
+    padding: 1vh;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.5vh
+
+.active, .show-table:hover {
+    background-color: #b20000;
 }
