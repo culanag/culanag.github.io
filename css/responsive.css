@@ -99,7 +99,8 @@
  
 	.notetopics{
 		padding-right: 7vw;
-        width: 86vw;
+        	width: 86vw;
+		font-size: 2vh;
 	}
 
 	.notetopics img{
