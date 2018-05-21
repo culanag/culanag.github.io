@@ -99,8 +99,8 @@
  
 	.notetopics{
 		padding-right: 7vw;
-        	width: 86vw;
-		font-size: 1.8vh;
+        width: 86vw;
+        font-size: 1.5vh;
 	}
 
 	.notetopics img{
@@ -133,11 +133,6 @@
 		padding:0vh;
 		margin: 0vh;
 	}	
-	
-	.version td, th {
-		padding: 0vh;
-		margin: 0vh;
-	}
 	
 	#quoteText {
 		display: none;
