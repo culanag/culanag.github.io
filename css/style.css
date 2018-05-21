@@ -660,9 +660,9 @@ tr:nth-child(even) {
 #toggle-nav {
     position: fixed;
     z-index: 10;
-    width: 10vw;
+    width: 12vw;
     padding-top: 90vh;
-    padding-left: 85vw;
+    padding-left: 83vw;
 }
 
 #first-choice {
