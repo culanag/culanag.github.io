@@ -743,3 +743,50 @@ tr:nth-child(even) {
 .active, .show-table:hover {
     background-color: #b20000;
 }
+
+/* music */
+/* audio */
+#audioplayer{
+    width: 480px;
+    height: 60px;
+  border: solid;
+	position: absolute;
+		top:0;
+	left:0;
+	float:left;
+}
+
+#pButton{
+    height:60px; 
+    width: 60px;
+    border: none;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float:left;
+    outline:none;
+	position: absolute;
+}
+
+.play{background: url('../media/no-audio.png') ;}
+.pause{background: url('../media/high-volume.png') ;}
+
+#timeline{
+    width: 400px;
+    height: 20px;
+    margin-top: 20px;
+    float: left;
+    border-radius: 15px;
+    background: rgba(0,0,0,.3);
+	display:none;
+	position: absolute;
+}
+#playhead{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-top: 1px;
+    background: rgba(0, 0, 0,1);
+	display:none;
+	position: absolute;
+}

@@ -49,9 +49,15 @@
 			<source src="media/bg.mp4" type="video/mp4">
 		</video>
 		
-		 <audio autoplay loop muted>
+		 <audio id="music" preload="true">
 			 <source src="media/imperial.mp3" type="audio/mpeg">
 		</audio> 
+		<div id="audioplayer">
+			<button id="pButton" class="play"></button>
+		  <div id="timeline">    
+				  <div id="playhead"></div>
+		  </div>
+		</div>
 	</div>
 	
 	<div class="hero">

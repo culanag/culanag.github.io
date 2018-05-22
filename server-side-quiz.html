@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/quiz.css">
+		<script type="text/javascript" src="js/main.js"></script>
+        <title>Web Systems and Technologies</title>
+    </head>
+    
+    <body>
+    <div class="container-fluid">
+        <header class="menu">
+            <nav>
+               <a href="index.html"> <img border="0" alt="home" src="media/cp30.png"></a>
+                <h1>Finals Quiz</h1>
+				<p id="progress">Question x of y.</p>
+			<hr>                
+            </nav>
+        </header> 
+		<div id="quiz">
+            <p id="question"></p>
+			
+			<div class="choices">
+				<button id="button-0" class="buttons"><span id="choice0"></span></button>
+                <br>
+				<button id="button-1" class="buttons"><span id="choice1"></span></button>
+                <br>
+				<button id="button-2" class="buttons"><span id="choice2"></span></button>
+                <br>
+				<button id="button-3" class="buttons"><span id="choice3"></span></button>
+			</div>
+			<hr>
+        </div>
+        
+        <footer>&copy; Web Systems and Technologies 2018| Group 6</footer>
+		
+		<script src="js/quiz-controller.js"></script>
+		<script src="js/question.js"></script>
+		<script src="js/quiz-app.js"></script>
+        </div>
+    </body>
+</html>
