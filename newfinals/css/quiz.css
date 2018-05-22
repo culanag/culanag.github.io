@@ -1,0 +1,200 @@
+@font-face {
+    font-family: starjedi;
+    src: url("../fonts/Starjedi.ttf");
+}
+
+@font-face {
+    font-family: starjhol;
+    src: url("../fonts/Starjhol.ttf");
+}
+
+@font-face {
+    font-family: force;
+    src: url(../fonts/force.ttf);
+}
+
+@font-face {
+    font-family: proxima;
+    src: url(../fonts/proxima.otf);
+}
+
+@-ms-viewport {
+  width: device-width;
+    
+}
+@media screen and (max-width:600px) {
+    a > img{
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        margin-right:auto;
+        margin-bottom: 1px;
+    }
+    
+   div > button {
+        background-color: #595959; 
+        border: none;
+        color: white;
+	    width: 80%;
+        text-align: center;
+        font-size: 100%;
+	    opacity: 0.75;
+        //transition: all .2s ease-in-out;
+        margin: auto;
+        padding: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+   div > button:hover {
+        background-color: #595959; 
+        border: none;
+        color: white;
+	    width: 80%;
+        text-align: center;
+        font-size: 100%;
+	    opacity: 0.75;
+	   	transform: scale(1.0);
+		box-shadow: none;
+        //transition: all .2s ease-in-out;
+        margin: auto;
+        padding: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+img{
+    display: block;
+    margin-left: 45%;
+    width: 10%;
+    height: auto;
+}
+
+body {
+	background-image: url("../media/deathstar.jpg");
+	align-content:center;
+    color:white;
+    text-align:center;
+}
+
+h1 {
+	font-family: starjhol;
+	display: block;
+    text-align: center;
+    font-size:7.5vw;
+    color: white;
+	text-shadow: 5px 5px 10px #ff1a1a;
+	
+}
+
+h2 {
+	font-family:force;
+	display: block;
+    text-align: center;
+    font-size:5vw;
+    color: rgb(255,216,0);
+	
+}
+
+p {
+    font-family: proxima;
+	font-size: 3vw;
+    color: rgba(253, 253, 253, 0.75);
+    text-align: center;
+}
+
+header{
+}
+button {
+   	background-color: #595959; 
+    border: none;
+    color: rgba(253, 253, 253, 1);
+	width: 20%;
+    text-align: center;
+	font-style: starjhol;
+    font-size: 2.2vw;
+	opacity: 0.75;
+	transition: all .2s ease-in-out;
+    margin: auto;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+   background-color: #595959; 
+    border: none;
+    color: white;
+	width: 20%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 100%;
+	opacity: 1;
+	transform: scale(1.3);
+	box-shadow: 0 4px 8px 0 rgba(145, 93, 182, 0.2), 0 6px 20px 0 rgba(145,93, 182, 0.19);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*button:focus {
+   background-color: #595959; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+	width: 20%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+	opacity: 1;
+	transform: scale(1.1);
+	box-shadow: 0 4px 8px 0 rgba(145, 93, 182, 0.2), 0 6px 20px 0 rgba(145,93, 182, 0.19);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+
+input {
+	background-color: #595959; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+	width: 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+	opacity: 1;
+}
+input:hover{
+	background-color: #595959; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+	width: 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+	opacity: 0.75;
+}
+
+div {
+	padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+footer {
+    color: white;
+    font-family: Montserrat-Regular, sans-serif;
+    text-align: left;
+    font-size: 60%
+}
+

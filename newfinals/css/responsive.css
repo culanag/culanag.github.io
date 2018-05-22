@@ -1,0 +1,273 @@
+@media screen and (max-width: 1024px) {	
+    /* Homepage */
+    #vidwall {
+        position: fixed;  
+        transform: scale(2) rotate(90deg);
+        width: 100%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        z-index: -10;
+    }
+    
+    .hero img {
+        width: 90vw;
+        padding-bottom: 20vh;
+    }
+	
+	.hero-2 img {
+        width: 90vw;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    
+    .main-content {
+        background-color: rgba(10,10,10,.6);
+    }
+	
+	.quiz-content {
+        background-color: rgba(10,10,10,.6);
+    }
+    
+    #logo {
+        max-width: 30vw;
+        padding-top: 3vh;
+    }
+    
+    header h1 {
+        font-size: 3vh;
+    }
+    
+    .topics {
+        width: 100%;
+        font-size: 5vh;
+    }
+    
+    .topics > img {
+        max-width: 10vh;
+        padding-top: 7vh;
+        padding-bottom: 5vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        float: left;
+    }
+    
+    .quiz {
+        width: 100%;
+        font-size: 5vh;
+    }
+    
+    .quiz > img {
+        max-width: 10vh;
+        padding-top: 7vh;
+        padding-bottom: 5vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        float: left;
+    }
+    
+    .topics > p {
+        font-size: 2vh;
+        padding: 2vw;
+    }
+    
+    .desc h1 {
+        margin: 0;
+        padding-top: 1vh;
+        font-size: 5vh;
+    }
+    
+    footer h1 {
+        font-size: 3vw;
+    }
+    
+    footer {
+        margin-top: 5vh;
+    }
+    
+    /* Notes Page */
+
+    #topics-list{
+	width: 29vw;
+	font-size: 1.5vh;
+	size: contain;
+    }
+	
+    #topics-list ul{
+	padding: 1vh 1vh 1vh 1vh;
+    }
+ 
+    .notetopics{
+	padding-right: 7vw;
+        width: 86vw;
+        font-size: 2vh;
+    }
+
+	.notetopics img{
+		margin-top: 2%;
+		margin-left: 5%;
+		margin-right: 5%;
+		padding-left:0;
+	}
+
+	.notetopics h2{
+		font-size: 3vh;
+		margin-left: 2%;
+	}
+	
+	.subtopic{
+		padding-left: 1vw;
+	}
+
+	.subtopic h3{
+		font-size: 2.5vh;
+	}
+
+	.subtopic h4{
+		font-size: 2vh;
+	}
+	
+	.version{
+		width: 100%;
+		padding:0vh;
+		margin: 0vh;
+	}	
+	
+	#quoteText {
+		display: none;
+	}
+	
+	#quote img {
+		display: none;
+	}
+	
+	#top10 {
+		padding-left: 3.5vw;
+	}
+        
+    button {
+        font-size: 1.2vh;
+        padding: 1.2vh;
+    }
+    
+    #notesTitle {
+        width: 80vw;
+        padding-left: 10vw;
+    }
+    
+    .show-table {   
+        font-size: 1.5vh;
+    }
+    
+    .version {
+        font-size: 1.5vh;
+    }
+    
+    /* Side Navbar */
+    #topics-list {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){	
+    /* Homepage */ 
+    .desc img {
+        width: 60vw;
+        padding-top: 5vh;
+    }
+    
+    .unit {
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 0;
+    }
+    
+    .unit p {
+        font-size: .8em;
+    }
+    
+    .people {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    
+    .person {
+        padding-left: 6%;
+        padding-right: 6%;
+        width: 35%;
+        margin-bottom: 20px;
+    }
+
+    .person img {
+        max-width: 30vw;
+    }
+    
+    .notetopics{
+        font-size: 2vh;
+    }
+}
+	
+
+@media screen and (min-device-width: 601px) and (max-width: 1024px) {
+    /* Homepage */
+    .desc img {
+        padding-top: 1.5vh;
+    }
+    
+    .unit {
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 0;
+    }
+    
+    .unit p {
+        font-size: 2vh;
+    }
+    
+    .people {
+        padding-left: 12%;
+        padding-right: 12%;
+        padding-bottom: 2vh;
+        padding-top: 2vh;
+    }
+    
+    .person {
+        padding-left: 6%;
+        padding-right: 6%;
+        width: 35%;
+        margin-bottom: 20px;
+    }
+
+    .person img {
+        max-width: 20vh;
+    }
+    
+    .notetopics{
+        font-size: 2vh;
+    }
+}
+
+@media screen and (min-width: 1025px){
+	#logo {
+		margin-top: 5vh;
+	}
+	.desc img {
+		padding-top: 10vh;
+	}
+    
+    .quiz p{
+        font-size: 2.5vh; 
+    }
+    
+    .person {
+        padding-bottom: 10vh;
+        padding-top:10vh;
+    }
+    #navbar {
+        display: none;
+    }
+    
+    #toggle-nav {
+        display: none;
+    }
+} 
